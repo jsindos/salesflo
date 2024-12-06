@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "target": "es6",
+    "module": "CommonJS", // or "Node16", "ESNext", used to be commonjs
+    "moduleResolution": "Node",
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "~/*": ["./*"]
+    },
+    "useUnknownInCatchVariables": false,
+    "strictNullChecks": true,
+    "lib": ["ES6"],
+    "types": ["node"]
+  },
+  "include": ["**/*.ts"]
+}

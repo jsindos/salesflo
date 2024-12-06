@@ -1,0 +1,38 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "plugins": ["react-refresh"],
+  "rules": {
+    "react/jsx-newline": ["warn", { "prevent": false, "allowMultilines": false }],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-closing-bracket-location": ["error", "line-aligned"],
+    "react/jsx-indent-props": ["error", 2],
+    "jsx-quotes": ["error", "prefer-double"],
+    "react/jsx-tag-spacing": ["error", { "beforeSelfClosing": "always" }],
+    "react/jsx-curly-brace-presence": ["error", { "props": "never", "children": "never" }],
+    // "indent": ["error", 2],
+    // "quotes": [2, "single", { "avoidEscape": true }],
+    "react/prop-types": "off",
+    "react/no-unescaped-entities": "off",
+    // "semi": ["error", "never"]
+    "react-refresh/only-export-components": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

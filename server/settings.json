@@ -1,0 +1,39 @@
+{
+  "development": {
+    "username": "josephtsindos",
+    "password": null,
+    "database": "xero",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false,
+    "MEDIA_URL": "http://localhost:8080",
+    "XERO_OAUTH_REDIRECT_URI": "http://localhost:5173/apps/xero",
+    "GOOGLE_OAUTH_REDIRECT_URI": "http://localhost:5173/auth/login"
+  },
+  "test": {
+    "username": "josephtsindos",
+    "password": null,
+    "database": "xerot",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false,
+    "MEDIA_URL": ""
+  },
+  "production": {
+    "username": "process.env.RDS_USERNAME",
+    "password": "process.env.RDS_PASSWORD",
+    "database": "process.env.RDS_DB_NAME",
+    "host": "process.env.RDS_HOSTNAME",
+    "port": "process.env.RDS_PORT",
+    "dialect": "postgres",
+    "logging": false,
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    },
+    "XERO_OAUTH_REDIRECT_URI": "https://salesflo.au/apps/xero",
+    "GOOGLE_OAUTH_REDIRECT_URI": "https://salesflo.au/auth/login"
+  }
+}
